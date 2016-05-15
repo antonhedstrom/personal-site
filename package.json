@@ -20,9 +20,7 @@
   "homepage": "https://github.com/antonhedstrom/personal-site#readme",
   "dependencies": {
     "express": "^4.13.4",
-    "express-handlebars": "^3.0.0"
-  },
-  "devDependencies": {
+    "express-handlebars": "^3.0.0",
     "gulp": "^3.9.1",
     "gulp-sass": "^2.3.1"
   }
