@@ -1,0 +1,71 @@
+
+.profile-card-wide {
+  margin: 0 auto;
+  margin-top: 25px;
+
+  @include breakpoint(desktop-up) {
+    margin-top: 100px;
+  }
+
+  &.mdl-card {
+    width: 90%;
+    max-width: 900px;
+  }
+
+  .mdl-card__title {
+    align-items: flex-start;
+    height: 400px;
+    background: url('/images/me_norway.jpg') right / cover;
+
+    padding-right: 40%; // So that the content will wrap instead of overlapping me in the image.
+
+    .mdl-card__title-text {
+      margin-top: 0;
+      font-family: 'Open Sans', sans-serif;
+      font-size: 300%;
+      color: #555;
+      display: none;
+
+      @include breakpoint(desktop-up) {
+        display: block;
+      }
+    }
+  }
+
+  .mdl-card__supporting-text {
+    line-height: 2em;
+
+    .mdl-card__title-text {
+      display: block;
+
+      @include breakpoint(desktop-up) {
+        display: none;
+      }
+    }
+  }
+
+  .mdl-card__actions {
+    display: flex;
+    flex-wrap: wrap;
+    box-sizing:border-box;
+    align-items: center;
+
+    .social-media-item {
+      flex: 1;
+      text-align: center;
+
+      @include breakpoint(mobile-only) {
+        min-width: 33%;
+      }
+
+      a {
+        display: block;
+
+        &:hover {
+          background-color: #D5D5D5;
+          opacity: 0.7;
+        }
+      }
+    }
+  }
+}

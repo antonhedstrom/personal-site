@@ -1,0 +1,15 @@
+a {
+  color: $haglofs-jacket;
+
+  &:hover {
+    color: $haglofs-jacket-dark;
+  }
+
+  &:active {
+    outline-color: $haglofs-jacket-dark;
+  }
+
+  &.clean {
+    text-decoration: none;
+  }
+}
