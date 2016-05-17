@@ -1,12 +1,15 @@
 // Setup
+@import "variables/general";
 @import "variables/colors";
 @import "variables/breakpoints";
 
 @import "mixins";
+@import "functions";
 
 
 // Styling
 @import "base";
+@import "layout";
 @import "links";
 @import "icons";
 @import "profile-card";

@@ -1,4 +1,6 @@
-$bp-mobile-max: 480px;
-$bp-tablet-min: $bp-mobile-max + 1;
-$bp-tablet-max: 768px;
-$bp-desktop-min: $bp-tablet-max + 1;
+
+$bp-mobile-max: 30em; // 480px / 16px
+$bp-tablet-max: 48em; // 768px / 16px
+
+$bp-tablet-min: $bp-mobile-max;
+$bp-desktop-min: $bp-tablet-max;

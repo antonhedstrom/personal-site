@@ -1,32 +1,23 @@
 
 .profile-card-wide {
-  margin: 0 auto;
-  margin-top: 25px;
-
-  @include breakpoint(desktop-up) {
-    margin-top: 100px;
-  }
-
-  &.mdl-card {
-    width: 90%;
-    max-width: 900px;
-  }
-
   .mdl-card__title {
     align-items: flex-start;
-    height: 400px;
+    height: 50vw;
+    max-height: 400px;
     background: url('/images/me_norway.jpg') right / cover;
 
-    padding-right: 40%; // So that the content will wrap instead of overlapping me in the image.
+    padding-right: 45%; // So that the content will wrap instead of overlapping me in the image.
 
     .mdl-card__title-text {
+      display: none;
       margin-top: 0;
+
+      color: #555;
       font-family: 'Open Sans', sans-serif;
       font-size: 300%;
-      color: #555;
-      display: none;
+      line-height: 1em;
 
-      @include breakpoint(desktop-up) {
+      @include breakpoint(tablet-up) {
         display: block;
       }
     }
@@ -38,7 +29,7 @@
     .mdl-card__title-text {
       display: block;
 
-      @include breakpoint(desktop-up) {
+      @include breakpoint(tablet-up) {
         display: none;
       }
     }

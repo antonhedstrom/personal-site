@@ -1,0 +1,17 @@
+.container-padded {
+  max-width: 900px;
+
+  padding: $site-padding;
+
+  margin: 0 auto 50px;
+
+  @include breakpoint(desktop-up) {
+    // This way we will achieve seemless padding...
+    padding-top: percentage(strip-unit($site-padding / ($bp-tablet-max * $base-font-size)));
+  }
+
+  // Need to address this class name to get specificity
+  .mdl-card {
+    width: 100%;
+  }
+}
