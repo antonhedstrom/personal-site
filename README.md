@@ -1,5 +1,5 @@
 # README
-My personal super simply page.
+My personal super simple page.
 
 
 # Developer
