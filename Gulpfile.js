@@ -13,7 +13,7 @@ gulp.task('sass', function() {
   ]).pipe(sass({
       errLogToConsole: true
     }))
-    .pipe(gulp.dest('./public/css/'));
+    .pipe(gulp.dest('./'));
 });
 
 
@@ -27,4 +27,3 @@ gulp.task('watch', ['default'], function() {
 // Other tasks
 gulp.task('default', ['sass']);
 gulp.task('build', ['default']);
-

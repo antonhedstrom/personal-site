@@ -1,0 +1,81 @@
+html, body {
+  background-color: #F5F5F5;
+  color: #BEBEBE;
+  font-size: 16px; }
+
+.container-padded {
+  max-width: 900px;
+  padding: 20px;
+  margin: 0 auto 50px; }
+  @media only screen and (min-width: 48em) {
+    .container-padded {
+      padding-top: 2.60417%; } }
+  .container-padded .mdl-card {
+    width: 100%; }
+
+a {
+  color: #1C3558; }
+  a:hover {
+    color: #1B3150; }
+  a:active {
+    outline-color: #1B3150; }
+  a.clean {
+    text-decoration: none; }
+
+.social-media-link .icon-circle {
+  opacity: 0.0;
+  fill: #fff;
+  fill-opacity: 1;
+  stroke: none;
+  stroke-width: 4.51399994;
+  stroke-miterlimit: 4;
+  stroke-dasharray: none;
+  stroke-opacity: 1; }
+
+.profile-card-wide .mdl-card__title {
+  align-items: flex-start;
+  height: 50vw;
+  max-height: 400px;
+  background: url("/images/me_norway.jpg") right/cover;
+  padding-right: 45%; }
+  .profile-card-wide .mdl-card__title .mdl-card__title-text {
+    display: none;
+    margin-top: 0;
+    color: #555;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 300%;
+    line-height: 1em; }
+    @media only screen and (min-width: 30em) {
+      .profile-card-wide .mdl-card__title .mdl-card__title-text {
+        display: block; } }
+
+.profile-card-wide .mdl-card__supporting-text {
+  line-height: 2em;
+  text-align: center; }
+  .profile-card-wide .mdl-card__supporting-text .mdl-card__title-text {
+    display: block; }
+    @media only screen and (min-width: 30em) {
+      .profile-card-wide .mdl-card__supporting-text .mdl-card__title-text {
+        display: none; } }
+
+.profile-card-wide .mdl-card__actions {
+  display: flex;
+  flex-wrap: wrap;
+  box-sizing: border-box;
+  align-items: center; }
+  @media only screen and (max-width: 30em) {
+    .profile-card-wide .mdl-card__actions {
+      justify-content: center; } }
+  .profile-card-wide .mdl-card__actions .social-media-item {
+    flex: 1;
+    text-align: center; }
+    @media only screen and (max-width: 30em) {
+      .profile-card-wide .mdl-card__actions .social-media-item {
+        flex-grow: 0; } }
+    .profile-card-wide .mdl-card__actions .social-media-item a {
+      display: block;
+      opacity: 0.7;
+      transition: all 200ms ease-in-out; }
+      .profile-card-wide .mdl-card__actions .social-media-item a:hover {
+        opacity: 1;
+        transform: scale(1.2); }

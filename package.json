@@ -1,27 +1,21 @@
 {
-  "name": "personal-site",
-  "version": "0.1.0",
+  "name": "antonhedstrom.github.io",
+  "version": "0.2.0",
   "description": "My super simple personal site.",
-  "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node server.js",
-    "postinstall": "gulp build"
+    "build": "gulp build",
+    "dev": "gulp watch & serve ./"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/antonhedstrom/personal-site.git"
+    "url": "git+https://github.com/antonhedstrom/antonhedstrom.github.io.git"
   },
   "author": "Anton Hedström",
   "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/antonhedstrom/personal-site/issues"
-  },
-  "homepage": "https://github.com/antonhedstrom/personal-site#readme",
+  "homepage": "http://antonhedstrom.github.io",
   "dependencies": {
-    "express": "^4.13.4",
-    "express-handlebars": "^3.0.0",
     "gulp": "^3.9.1",
-    "gulp-sass": "^2.3.1"
+    "gulp-sass": "^2.3.1",
+    "serve": "^11.3.0"
   }
 }

@@ -25,6 +25,7 @@
 
   .mdl-card__supporting-text {
     line-height: 2em;
+    text-align: center;
 
     .mdl-card__title-text {
       display: block;
@@ -41,20 +42,26 @@
     box-sizing:border-box;
     align-items: center;
 
+    @include breakpoint(mobile-only) {
+      justify-content: center;
+    }
+
     .social-media-item {
       flex: 1;
       text-align: center;
 
       @include breakpoint(mobile-only) {
-        min-width: 33%;
+        flex-grow: 0;
       }
 
       a {
         display: block;
+        opacity: 0.7;
+        transition: all 200ms ease-in-out;
 
         &:hover {
-          background-color: #D5D5D5;
-          opacity: 0.7;
+          opacity: 1;
+          transform: scale(1.2);
         }
       }
     }
