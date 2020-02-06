@@ -52,6 +52,9 @@ a {
 .profile-card-wide .mdl-card__supporting-text {
   line-height: 2em;
   text-align: center; }
+  @media only screen and (min-width: 30em) {
+    .profile-card-wide .mdl-card__supporting-text {
+      text-align: left; } }
   .profile-card-wide .mdl-card__supporting-text .mdl-card__title-text {
     display: block; }
     @media only screen and (min-width: 30em) {

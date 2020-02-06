@@ -27,6 +27,10 @@
     line-height: 2em;
     text-align: center;
 
+    @include breakpoint(tablet-up) {
+      text-align: left;
+    }
+
     .mdl-card__title-text {
       display: block;
 
