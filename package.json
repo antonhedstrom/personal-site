@@ -1,10 +1,11 @@
 {
   "name": "antonhedstrom.github.io",
   "version": "0.2.0",
-  "description": "My super simple personal site.",
+  "description": "Homepage of Anton.",
   "scripts": {
     "build": "gulp build",
-    "dev": "gulp watch & serve ./"
+    "dev": "gulp watch & serve ./",
+    "deploy": "npm run build && git add . && git commit -m 'Deploy' && git push origin master"
   },
   "repository": {
     "type": "git",
@@ -12,7 +13,7 @@
   },
   "author": "Anton Hedström",
   "license": "MIT",
-  "homepage": "http://antonhedstrom.github.io",
+  "homepage": "https://antonhedstrom.github.io",
   "devDependencies": {
     "@babel/core": "^7.8.4",
     "@babel/preset-env": "^7.8.4",

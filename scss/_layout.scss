@@ -1,17 +1,31 @@
-.container-padded {
-  max-width: 900px;
+.flex-container {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 
-  padding: $site-padding;
-
-  margin: 0 auto 50px;
-
-  @include breakpoint(desktop-up) {
-    // This way we will achieve seemless padding...
-    padding-top: percentage(strip-unit($site-padding / ($bp-tablet-max * $base-font-size)));
+  @include breakpoint(mobile-only) {
+    align-items: flex-start;
+    margin-top: 2em;
   }
+}
 
-  // Need to address this class name to get specificity
-  .mdl-card {
+.user-container {
+  width: 550px;
+
+  @include breakpoint(mobile-only) {
     width: 100%;
+  }
+}
+
+.personal-info {
+  padding: $site-padding;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  flex-wrap: wrap;
+
+  @include breakpoint(mobile-only) {
+    flex-direction: column;
   }
 }
