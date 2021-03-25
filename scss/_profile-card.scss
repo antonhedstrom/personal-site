@@ -1,6 +1,35 @@
+@keyframes float {
+  0% {
+    transform: translatey(0px);
+    box-shadow: 0 5px 15px 0px rgba(0,0,0,0.6);
+    @media (prefers-color-scheme: dark) {
+      box-shadow: 0 5px 15px 0px rgba(150,150,150,0.6);
+    }
+  }
+  50% {
+    transform: translatey(-20px);
+    box-shadow: 0 25px 15px 0px rgba(0,0,0,0.2);
+    @media (prefers-color-scheme: dark) {
+      box-shadow: 0 25px 15px 0px rgba(150,150,150,0.2);
+    }
+  }
+  100% {
+    transform: translatey(0px);
+    box-shadow: 0 5px 15px 0px rgba(0,0,0,0.6);
+    @media (prefers-color-scheme: dark) {
+      box-shadow: 0 5px 15px 0px rgba(150,150,150,0.6);
+    }
+  }
+}
+
+
 
 .short-info {
   margin: 0 2em 1.34em 2em;
+
+  @media (prefers-color-scheme: dark) {
+    color:white;
+  }
 
   @include breakpoint(mobile-only) {
     margin: 0;
@@ -14,10 +43,11 @@
   height: 12em;
   overflow: hidden;
   border-radius: 50%;
+  animation: float 6s ease-in-out infinite;
 
-  border: 2px rgba(0, 0, 0, 0.8) solid;
+  border: 3px rgba(0, 0, 0, 0.7) solid;
   @media (prefers-color-scheme: dark) {
-    border: 8px rgba(214, 214, 214, 0.5) solid;
+    border: 5px rgba(234, 234, 234, 0.8) solid;
 
     @include breakpoint(mobile-only) {
       border-color: rgba(255, 255, 255, 0.9);

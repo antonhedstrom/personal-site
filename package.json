@@ -15,11 +15,11 @@
   "license": "MIT",
   "homepage": "https://antonhedstrom.github.io",
   "devDependencies": {
-    "@babel/core": "^7.8.4",
-    "@babel/preset-env": "^7.8.4",
-    "@babel/register": "^7.8.3",
+    "@babel/core": "^7.13.10",
+    "@babel/preset-env": "^7.13.12",
+    "@babel/register": "^7.13.8",
     "gulp": "^4.0.2",
-    "gulp-sass": "^4.0.2",
-    "serve": "^11.3.0"
+    "gulp-sass": "^4.1.0",
+    "serve": "^11.3.2"
   }
 }
